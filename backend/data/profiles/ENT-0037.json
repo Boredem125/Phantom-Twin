@@ -1,0 +1,327 @@
+{
+  "entity_id": "ENT-0037",
+  "entity_type": "service_account",
+  "peak_hour": 17.10593220338983,
+  "hour_sigma": 1.1687159673559577,
+  "geo_weights": {
+    "Toronto": 0.2754237288135593,
+    "Chicago": 0.24152542372881355,
+    "Sydney": 0.3644067796610169,
+    "Delhi": 0.11864406779661017
+  },
+  "home_geos": [
+    "Toronto",
+    "Chicago",
+    "Sydney",
+    "Delhi"
+  ],
+  "resource_freq": {
+    "/api/v1/firmware": 0.11864406779661017,
+    "/api/v1/reports": 0.11016949152542373,
+    "/api/v1/alerts": 0.1059322033898305,
+    "/api/v2/files": 0.09745762711864407,
+    "/api/v2/auth/tokens": 0.0847457627118644,
+    "/api/v1/db/read": 0.07627118644067797,
+    "/api/v1/auth/tokens": 0.07203389830508475,
+    "/api/v1/admin": 0.07203389830508475,
+    "/api/v1/devices": 0.07203389830508475,
+    "/api/v1/sensors": 0.06779661016949153,
+    "/api/v2/devices": 0.05084745762711865,
+    "/api/v2/logs": 0.00847457627118644,
+    "/api/v1/db/write": 0.00847457627118644,
+    "/api/v2/users": 0.00847457627118644,
+    "/api/v2/metrics": 0.00847457627118644,
+    "/api/v1/assets": 0.00423728813559322,
+    "/api/v1/keys": 0.00423728813559322,
+    "/api/v2/alerts": 0.00423728813559322,
+    "/api/v1/network": 0.00423728813559322,
+    "/api/v2/audit": 0.00423728813559322,
+    "/api/v1/backup": 0.00423728813559322,
+    "/api/v2/assets": 0.00423728813559322,
+    "/api/v1/logs": 0.00423728813559322,
+    "/api/v1/configs": 0.00423728813559322
+  },
+  "normal_resources": [
+    "/api/v1/firmware",
+    "/api/v1/reports",
+    "/api/v1/alerts",
+    "/api/v2/files",
+    "/api/v2/auth/tokens",
+    "/api/v1/db/read",
+    "/api/v1/auth/tokens",
+    "/api/v1/admin",
+    "/api/v1/devices",
+    "/api/v1/sensors",
+    "/api/v2/devices",
+    "/api/v2/logs",
+    "/api/v1/db/write",
+    "/api/v2/users",
+    "/api/v2/metrics"
+  ],
+  "markov": {
+    "/api/v1/auth/tokens": {
+      "/api/v2/devices": 0.11764705882352941,
+      "/api/v2/logs": 0.058823529411764705,
+      "/api/v1/sensors": 0.058823529411764705,
+      "/api/v2/files": 0.058823529411764705,
+      "/api/v1/auth/tokens": 0.17647058823529413,
+      "/api/v1/devices": 0.058823529411764705,
+      "/api/v2/auth/tokens": 0.058823529411764705,
+      "/api/v1/firmware": 0.23529411764705882,
+      "/api/v1/alerts": 0.11764705882352941,
+      "/api/v1/admin": 0.058823529411764705
+    },
+    "/api/v2/devices": {
+      "/api/v1/db/read": 0.16666666666666666,
+      "/api/v2/auth/tokens": 0.16666666666666666,
+      "/api/v2/devices": 0.08333333333333333,
+      "/api/v2/files": 0.08333333333333333,
+      "/api/v2/alerts": 0.08333333333333333,
+      "/api/v1/devices": 0.16666666666666666,
+      "/api/v1/alerts": 0.08333333333333333,
+      "/api/v2/assets": 0.08333333333333333,
+      "/api/v1/reports": 0.08333333333333333
+    },
+    "/api/v1/db/read": {
+      "/api/v1/admin": 0.1111111111111111,
+      "/api/v2/files": 0.2222222222222222,
+      "/api/v2/auth/tokens": 0.05555555555555555,
+      "/api/v1/devices": 0.2222222222222222,
+      "/api/v1/alerts": 0.2222222222222222,
+      "/api/v1/firmware": 0.05555555555555555,
+      "/api/v1/reports": 0.1111111111111111
+    },
+    "/api/v1/admin": {
+      "/api/v2/devices": 0.058823529411764705,
+      "/api/v1/reports": 0.11764705882352941,
+      "/api/v1/alerts": 0.29411764705882354,
+      "/api/v1/admin": 0.17647058823529413,
+      "/api/v1/sensors": 0.058823529411764705,
+      "/api/v1/network": 0.058823529411764705,
+      "/api/v1/devices": 0.058823529411764705,
+      "/api/v1/db/read": 0.058823529411764705,
+      "/api/v2/auth/tokens": 0.058823529411764705,
+      "/api/v1/auth/tokens": 0.058823529411764705
+    },
+    "/api/v2/auth/tokens": {
+      "/api/v1/devices": 0.1,
+      "/api/v1/alerts": 0.1,
+      "/api/v2/files": 0.1,
+      "/api/v1/reports": 0.2,
+      "/api/v2/auth/tokens": 0.1,
+      "/api/v1/sensors": 0.2,
+      "/api/v1/firmware": 0.15,
+      "/api/v1/admin": 0.05
+    },
+    "/api/v1/devices": {
+      "/api/v1/reports": 0.23529411764705882,
+      "/api/v2/files": 0.058823529411764705,
+      "/api/v2/devices": 0.17647058823529413,
+      "/api/v1/auth/tokens": 0.058823529411764705,
+      "/api/v1/db/write": 0.058823529411764705,
+      "/api/v1/devices": 0.11764705882352941,
+      "/api/v1/firmware": 0.058823529411764705,
+      "/api/v1/db/read": 0.11764705882352941,
+      "/api/v1/configs": 0.058823529411764705,
+      "/api/v1/alerts": 0.058823529411764705
+    },
+    "/api/v1/reports": {
+      "/api/v1/devices": 0.04,
+      "/api/v1/reports": 0.12,
+      "/api/v1/db/read": 0.12,
+      "/api/v2/files": 0.2,
+      "/api/v1/auth/tokens": 0.12,
+      "/api/v2/auth/tokens": 0.08,
+      "/api/v1/admin": 0.12,
+      "/api/v1/firmware": 0.12,
+      "/api/v1/sensors": 0.04,
+      "/api/v2/metrics": 0.04
+    },
+    "/api/v2/files": {
+      "/api/v2/files": 0.043478260869565216,
+      "/api/v2/auth/tokens": 0.08695652173913043,
+      "/api/v1/sensors": 0.08695652173913043,
+      "/api/v1/admin": 0.13043478260869565,
+      "/api/v1/reports": 0.13043478260869565,
+      "/api/v1/db/read": 0.08695652173913043,
+      "/api/v1/alerts": 0.13043478260869565,
+      "/api/v1/firmware": 0.13043478260869565,
+      "/api/v1/auth/tokens": 0.043478260869565216,
+      "/api/v2/users": 0.043478260869565216,
+      "/api/v2/devices": 0.043478260869565216,
+      "/api/v1/db/write": 0.043478260869565216
+    },
+    "/api/v1/alerts": {
+      "/api/v1/devices": 0.08,
+      "/api/v1/auth/tokens": 0.08,
+      "/api/v2/auth/tokens": 0.12,
+      "/api/v1/firmware": 0.2,
+      "/api/v1/alerts": 0.08,
+      "/api/v1/reports": 0.12,
+      "/api/v1/admin": 0.12,
+      "/api/v2/metrics": 0.04,
+      "/api/v2/devices": 0.08,
+      "/api/v1/backup": 0.04,
+      "/api/v2/files": 0.04
+    },
+    "/api/v1/sensors": {
+      "/api/v2/logs": 0.0625,
+      "/api/v1/devices": 0.0625,
+      "/api/v1/assets": 0.0625,
+      "/api/v2/devices": 0.125,
+      "/api/v1/sensors": 0.125,
+      "/api/v1/alerts": 0.0625,
+      "/api/v2/users": 0.0625,
+      "/api/v2/auth/tokens": 0.0625,
+      "/api/v1/db/read": 0.125,
+      "/api/v1/auth/tokens": 0.0625,
+      "/api/v2/files": 0.0625,
+      "/api/v1/firmware": 0.0625,
+      "/api/v1/logs": 0.0625
+    },
+    "/api/v2/logs": {
+      "/api/v2/auth/tokens": 0.5,
+      "/api/v1/admin": 0.5
+    },
+    "/api/v1/db/write": {
+      "/api/v1/db/read": 1.0
+    },
+    "/api/v1/assets": {
+      "/api/v1/sensors": 1.0
+    },
+    "/api/v1/firmware": {
+      "/api/v1/keys": 0.03571428571428571,
+      "/api/v1/sensors": 0.14285714285714285,
+      "/api/v1/firmware": 0.21428571428571427,
+      "/api/v2/auth/tokens": 0.14285714285714285,
+      "/api/v1/alerts": 0.07142857142857142,
+      "/api/v1/reports": 0.14285714285714285,
+      "/api/v2/files": 0.10714285714285714,
+      "/api/v2/audit": 0.03571428571428571,
+      "/api/v1/auth/tokens": 0.07142857142857142,
+      "/api/v1/db/read": 0.03571428571428571
+    },
+    "/api/v1/keys": {
+      "/api/v1/alerts": 1.0
+    },
+    "/api/v2/users": {
+      "/api/v1/db/read": 0.5,
+      "/api/v1/alerts": 0.5
+    },
+    "/api/v2/metrics": {
+      "/api/v2/files": 0.5,
+      "/api/v1/db/read": 0.5
+    },
+    "/api/v2/alerts": {
+      "/api/v1/auth/tokens": 1.0
+    },
+    "/api/v1/network": {
+      "/api/v1/db/read": 1.0
+    },
+    "/api/v2/audit": {
+      "/api/v1/devices": 1.0
+    },
+    "/api/v1/backup": {
+      "/api/v1/auth/tokens": 1.0
+    },
+    "/api/v2/assets": {
+      "/api/v2/files": 1.0
+    },
+    "/api/v1/logs": {
+      "/api/v2/files": 1.0
+    },
+    "/api/v1/configs": {
+      "/api/v1/firmware": 1.0
+    }
+  },
+  "avg_duration": 19.308559322033897,
+  "dur_sigma": 6.566935961652664,
+  "preferred_auth": "password",
+  "known_fingerprints": [
+    "09f3e21a-0f46-47",
+    "080847b1-cf66-4a",
+    "84e2ee25-98c8-41"
+  ],
+  "known_ips": [
+    "10.2.8.14",
+    "10.3.2.1",
+    "10.1.9.7",
+    "10.3.5.16",
+    "10.4.7.9",
+    "10.3.4.3",
+    "10.3.2.3",
+    "10.1.8.7",
+    "10.2.8.10",
+    "10.4.3.20",
+    "10.4.4.15",
+    "10.3.1.26",
+    "10.2.6.22",
+    "10.2.6.24",
+    "10.1.2.24",
+    "10.2.5.6",
+    "10.4.1.8",
+    "10.3.4.24",
+    "10.4.3.17",
+    "10.3.5.25",
+    "10.2.9.22",
+    "10.2.3.13",
+    "10.4.2.15",
+    "10.3.2.20",
+    "10.2.6.29",
+    "10.4.3.6",
+    "10.2.7.8",
+    "10.3.9.10",
+    "10.1.9.6",
+    "10.3.7.27",
+    "10.3.3.8",
+    "10.2.7.11",
+    "10.4.1.20",
+    "10.1.8.18",
+    "10.1.7.18",
+    "10.1.1.8",
+    "10.4.3.14",
+    "10.3.9.7",
+    "10.2.2.29",
+    "10.2.2.5",
+    "10.4.2.12",
+    "10.4.1.15",
+    "10.2.3.18",
+    "10.4.2.27",
+    "10.4.3.3",
+    "10.1.1.2",
+    "10.4.8.2",
+    "10.4.9.25",
+    "10.2.1.22",
+    "10.1.5.1",
+    "10.1.7.19",
+    "10.4.7.29",
+    "10.4.6.26",
+    "10.2.7.26",
+    "10.2.6.23",
+    "10.1.5.5",
+    "10.3.8.21",
+    "10.4.2.29",
+    "10.4.7.6",
+    "10.4.2.7",
+    "10.1.8.2",
+    "10.3.6.5",
+    "10.2.3.22",
+    "10.4.1.18",
+    "10.3.7.22",
+    "10.4.5.28",
+    "10.3.9.9",
+    "10.1.9.14",
+    "10.2.6.11",
+    "10.4.7.22",
+    "10.2.6.18",
+    "10.3.9.6",
+    "10.1.9.22",
+    "10.4.9.21",
+    "10.1.5.23",
+    "10.1.4.12",
+    "10.1.4.6",
+    "10.4.5.29"
+  ],
+  "n_events": 236,
+  "bootstrap": false
+}

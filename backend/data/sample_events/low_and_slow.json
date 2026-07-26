@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0032",
+  "entity_type": "service_account",
+  "timestamp": "2025-03-27T19:41:00",
+  "source_ip": "10.3.2.12",
+  "geo_location": "Chicago",
+  "resource_accessed": "/api/v2/backup",
+  "auth_method": "mfa",
+  "session_duration": 1.64,
+  "command_sequence": "cat,awk",
+  "device_fingerprint": "27b00416-60d6-4a",
+  "label": "low_and_slow"
+}

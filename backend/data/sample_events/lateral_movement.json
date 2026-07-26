@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0187",
+  "entity_type": "user",
+  "timestamp": "2025-03-28T10:00:00",
+  "source_ip": "10.4.9.7",
+  "geo_location": "Seattle",
+  "resource_accessed": "/api/v2/devices",
+  "auth_method": "password",
+  "session_duration": 9.79,
+  "command_sequence": "cp,crontab,kill",
+  "device_fingerprint": "ba73ab40-e8b3-44",
+  "label": "lateral_movement"
+}

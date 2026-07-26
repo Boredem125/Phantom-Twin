@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0053",
+  "entity_type": "edge_device",
+  "timestamp": "2025-03-22T14:38:23",
+  "source_ip": "10.4.9.15",
+  "geo_location": "Seattle",
+  "resource_accessed": "/api/v1/keys",
+  "auth_method": "certificate",
+  "session_duration": 40.0,
+  "command_sequence": "nc,ps,mv,nc",
+  "device_fingerprint": "f3d27640-a946-4a",
+  "label": "normal"
+}

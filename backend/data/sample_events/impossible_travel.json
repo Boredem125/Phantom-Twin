@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0064",
+  "entity_type": "edge_device",
+  "timestamp": "2025-03-30T18:23:00",
+  "source_ip": "194.165.16.78",
+  "geo_location": "Paris",
+  "resource_accessed": "/api/v1/sensors",
+  "auth_method": "password",
+  "session_duration": 25.41,
+  "command_sequence": "curl,grep,awk",
+  "device_fingerprint": "adeceb90-4960-45",
+  "label": "impossible_travel"
+}

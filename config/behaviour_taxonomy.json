@@ -1,0 +1,41 @@
+{
+  "Normal": {
+    "description": "Per‑entity habitual pattern: regular login hours, consistent geo, typical resource set, sampled with noise",
+    "type": "Benign"
+  },
+  "BruteForce": {
+    "description": "Rapid repeated failed‑auth attempts from one source in a short window",
+    "type": "Anomaly",
+    "params": {"attempts": 20, "window_seconds": 30}
+  },
+  "ImpossibleTravel": {
+    "description": "Same entity_id logging in from geographically distant locations within an implausible time gap",
+    "type": "Anomaly",
+    "params": {"max_time_minutes": 30, "min_distance_km": 500}
+  },
+  "CredentialStuffing": {
+    "description": "Many entity_ids, few source_ips, high failure rate",
+    "type": "Anomaly",
+    "params": {"unique_entities": 100, "source_ips": 5, "failure_rate": 0.9}
+  },
+  "LateralMovement": {
+    "description": "Compromised entity accesses an unusual sequence or breadth of resources it never touched before",
+    "type": "Anomaly",
+    "params": {"new_resource_ratio": 0.6}
+  },
+  "DeviceSpoofing": {
+    "description": "A device_id reappearing with a mismatched fingerprint (different OS/MAC than history)",
+    "type": "Anomaly",
+    "params": {"fingerprint_change_prob": 0.5}
+  },
+  "LowAndSlowExfiltration": {
+    "description": "Gradual, small, off‑hours resource access building up over days or weeks",
+    "type": "Anomaly",
+    "params": {"daily_volume_mb": 5, "off_hours": [0,6]}
+  },
+  "InsiderDrift": {
+    "description": "Legitimate entity slowly expanding privilege or resource footprint — ambiguous, used for false‑positive tuning",
+    "type": "EdgeCase",
+    "params": {"privilege_growth_rate": 0.02}
+  }
+}

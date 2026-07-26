@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0017",
+  "entity_type": "service_account",
+  "timestamp": "2025-03-27T20:00:00",
+  "source_ip": "46.101.25.135",
+  "geo_location": "Paris",
+  "resource_accessed": "/api/v2/network",
+  "auth_method": "certificate",
+  "session_duration": 8.56,
+  "command_sequence": "ps,systemctl,netstat",
+  "device_fingerprint": "95f78d69-04bc-48",
+  "label": "device_spoofing"
+}

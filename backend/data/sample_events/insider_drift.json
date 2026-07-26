@@ -1,0 +1,13 @@
+{
+  "entity_id": "ENT-0161",
+  "entity_type": "service_account",
+  "timestamp": "2025-03-29T19:27:00",
+  "source_ip": "10.2.8.23",
+  "geo_location": "Amsterdam",
+  "resource_accessed": "/api/v2/configs",
+  "auth_method": "mfa",
+  "session_duration": 26.71,
+  "command_sequence": "mv,grep",
+  "device_fingerprint": "b21c8965-efa2-41",
+  "label": "insider_drift"
+}
