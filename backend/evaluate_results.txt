@@ -1,0 +1,40 @@
+
+======================================================================
+PHANTOM TWIN — Evaluation Results
+======================================================================
+
+Per-class Precision / Recall / F1:
+                     precision    recall  f1-score   support
+
+        brute_force       1.00      0.71      0.83        14
+credential_stuffing       0.89      0.73      0.80        33
+    device_spoofing       0.11      1.00      0.20         1
+  impossible_travel       0.00      1.00      0.00         1
+      insider_drift       0.00      0.00      0.00         4
+   lateral_movement       0.24      0.67      0.35         9
+       low_and_slow       0.00      0.00      0.00         6
+             normal       1.00      0.58      0.74      5084
+
+           accuracy                           0.58      5152
+          macro avg       0.40      0.59      0.37      5152
+       weighted avg       0.99      0.58      0.73      5152
+
+Confusion Matrix:
+                     brute_force  credential_stuffing  device_spoofing  impossible_travel  insider_drift  lateral_movement  low_and_slow  normal
+brute_force                   10                    0                4                  0              0                 0             0       0
+credential_stuffing            0                   24                4                  1              2                 0             2       0
+device_spoofing                0                    0                1                  0              0                 0             0       0
+impossible_travel              0                    0                0                  1              0                 0             0       0
+insider_drift                  0                    0                0                  0              0                 0             0       4
+lateral_movement               0                    0                0                  2              0                 6             0       1
+low_and_slow                   0                    0                0                  3              1                 0             0       2
+normal                         0                    3                0               1114            357                19           629    2962
+
+Binary AUC-ROC (normal vs anomaly): 0.9860
+
+At top-1% score threshold (51 events):
+  True Positives:  46
+  False Positives: 5
+  FPR:             0.0010 (0.10%)
+  Precision:       0.9020 (90.20%)
+======================================================================
